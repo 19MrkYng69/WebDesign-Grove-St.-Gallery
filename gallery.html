@@ -8,9 +8,15 @@
 </head>
 <body>
     <header>
-        <h1>Gallery</h1>
-    </header>
-
+    <div class="header-container">
+        <div class="header-content">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Left" class="side-logo">
+            <img src="Images/gallery-border-image-1-67d030f8225fb.webp" alt="Gallery Decorative Image Left" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Center" id="logo">
+            <img src="Images/gallery-border-image-2-67d030f8226ab.webp" alt="Gallery Decorative Image Right" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Right" class="side-logo">
+        </div>
+    </div>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,19 +26,26 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
+</header>
+    
     <main>
-        <h2>Artworks</h2>
-        <div class="gallery-grid">
-            <img src="Images/alone-3031258-1920-67d02a7a5c17d.webp" alt="Artwork 1">
-            <img src="Images/antenna-502721-unsplash-67d02a7ad3f61.webp" alt="Artwork 2">
-            <img src="Images/clem-onojeghuo-197522-unsplash.webp" alt="Artwork 3">
-            <img src="Images/istanbul-168774-1920-67d02a7fe5d1c.webp" alt="Artwork 4">
-        </div>
-    </main>
+        <section>
+            <h1 class="gallery-title">Grove St. Gallery - Painting Gallery</h1>
+            <div class="gallery-grid">
+                <img src="Images/alone-3031258-1920-67d02a7a5c17d.webp" alt="Gallery Image 1" class="lightbox-trigger">
+                <img src="Images/antenna-502721-unsplash-67d02a7ad3f61.webp" alt="Gallery Image 2" class="lightbox-trigger">
+                <img src="Images/clem-onojeghuo-197522-unsplash.webp" alt="Gallery Image 3" class="lightbox-trigger">
+                <img src="Images/istanbul-168774-1920-67d02a7fe5d1c.webp" alt="Gallery Image 4" class="lightbox-trigger">
+                <img src="Images/samuel-zeller-74983-unsplash-67d02a8532bbc.webp" alt="Gallery Image 5" class="lightbox-trigger">
+                <img src="Images/woman-1283009-1920-67d02a8558c87.webp" alt="Gallery Image 6" class="lightbox-trigger">
+            </div>
 
+        </section>
+    </main>
+    
     <footer>
-        <p>&copy; 2025 Grove St. Gallery</p>
+        <p>&copy; 2025 Grove St. Gallery | <a href="contact.html">Contact Us</a></p>
+
     </footer>
 </body>
 </html>

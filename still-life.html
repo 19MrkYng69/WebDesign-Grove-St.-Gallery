@@ -5,12 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Still Life | Grove St. Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+            max-height: 400px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>Beauty in the Still</h1>
-    </header>
-
+    <div class="header-container">
+        <div class="header-content">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Left" class="side-logo">
+            <img src="Images/gallery-border-image-1-67d030f8225fb.webp" alt="Gallery Decorative Image Left" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Center" id="logo">
+            <img src="Images/gallery-border-image-2-67d030f8226ab.webp" alt="Gallery Decorative Image Right" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Right" class="side-logo">
+        </div>
+    </div>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,19 +46,30 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+</header>
+    
+<main>
+    <h1 class="still-life-title">Grove St. Gallery - Beauty in the Still</h1>
+        <p>A collection of drawings and photographs of still life. Capturing the beauty in everyday objects, the elegance in their form and the scenes they create that one might often miss if not paying attention.</p>
+    </div>
 
-    <main>
-        <h2>Still Life Collection</h2>
-        <div class="gallery-grid">
-            <img src="Images/roberta-sorge-157246-unsplash-67d02c911d31c-transformed.webp" alt="Still Life 1">
-            <img src="Images/rustic-3441673-1920-67d02c9f7745d.webp" alt="Still Life 2">
-            <img src="Images/still-life-3693750-1920-67d02caba4bb3.webp" alt="Still Life 3">
-            <img src="Images/still-life-rustic-3441673_1920.webp" alt="Still Life 4">
-        </div>
-    </main>
+    <!-- Update this section to use gallery-grid class -->
+    <div class="gallery-grid">
+        <img src="Images/florencia-potter-739936-unsplash-67d02c906d69c.webp" alt="Still Life Image 1" class="lightbox-trigger">
+        <img src="Images/still-life-roberta-sorge-157246-unsplash.webp" alt="Still Life Image 2" class="lightbox-trigger">
+        <img src="Images/vintage-1872682-1920-67d02cae7b1cf.webp" alt="Still Life Image 3" class="lightbox-trigger">
+        <img src="Images/still-life-562357-1920-67d02ca476be9.webp" alt="Still Life Image 4" class="lightbox-trigger">
+        <img src="Images/still-life-690705-1920-67d02ca7bddfe.webp" alt="Still Life Image 5" class="lightbox-trigger">
+        <img src="Images/still-life-851328-1920-67d02ca94d4a8.webp" alt="Still Life Image 6" class="lightbox-trigger">
+        <img src="Images/still-life-3693750-1920-67d02caba4bb3.webp" alt="Still Life Image 7" class="lightbox-trigger">
+        <img src="Images/still-life-rustic-3441673_1920.webp" alt="Still Life Image 8" class="lightbox-trigger">
+    </div>
 
+</main>
+    
     <footer>
-        <p>&copy; 2025 Grove St. Gallery</p>
+        <p>&copy; 2025 Grove St. Gallery | <a href="contact.html">Contact Us</a></p>
+
     </footer>
 </body>
 </html>

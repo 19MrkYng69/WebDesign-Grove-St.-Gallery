@@ -6,12 +6,17 @@
     <title>Home | Grove St. Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body>   
     <header>
-        <img src="Images/gallery-logo-white.webp" alt="Gallery Logo" class="logo">
-        <h1>Welcome to Grove St. Gallery</h1>
-    </header>
-
+    <div class="header-container">
+        <div class="header-content">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Left" class="side-logo">
+            <img src="Images/gallery-border-image-1-67d030f8225fb.webp" alt="Gallery Decorative Image Left" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Center" id="logo">
+            <img src="Images/gallery-border-image-2-67d030f8226ab.webp" alt="Gallery Decorative Image Right" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Right" class="side-logo">
+        </div>
+    </div>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,20 +26,32 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <main class="flex-container">
-        <div class="collection-container">
-            <h2>Latest Collection: Beauty in the Still</h2>
-            <p>A collection of still-life drawings and photographs.</p>
+</header>
+    
+<main>
+    <h1 class="index-title">Welcome to Grove St. Gallery</h1>
+        <p>The premier art collection in Edinburgh, showcasing a range of local and international artists.</p>
+    </div>
+    <h2>Latest Collection: Beauty in the Still</h2>
+        <p>A collection of drawings and photographs of still life. Capturing the beauty in everyday objects, the elegance in their form, and the scenes they create that one might often miss if not paying attention.</p>
+            </div>
+            <div class="collection-image">
+                <img src="Images/florencia-potter-739936-unsplash-67d02c906d69c.webp" alt="Featured Still Life">
+            </div>
         </div>
+
         <div class="floorplan-box">
-            <h3>Gallery Floor Plan</h3>
-            <img src="Images/ground-level.webp" alt="Gallery Floor Plan">
+            <h2 class="floorplan-title">Gallery Floor-Plan</h2>
+            <div class="floorplan-image">
+                <img src="Images/ground-level-67d02f1b28631.webp" alt="Gallery Floor Plan">
+            </div>
         </div>
-    </main>
-
+    </section>
+</main>
+    
     <footer>
-        <p>&copy; 2025 Grove St. Gallery</p>
+        <p>&copy; 2025 Grove St. Gallery | <a href="contact.html">Contact Us</a></p>
+
     </footer>
 </body>
 </html>
