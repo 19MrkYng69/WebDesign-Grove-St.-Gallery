@@ -2,7 +2,7 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Bell MT, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
@@ -49,6 +49,26 @@ body {
     display: block;
 }
 
+/* Apply Background Image to All Pages */
+body {
+    background-image: url('Images/Background.webp'); /* If inside an images/ folder, use 'images/Background.png' */
+    background-size: cover; /* Ensures full coverage */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps background static when scrolling */
+}
+
+/* Optional: Add a Background Overlay for Better Readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Slight dark overlay to improve contrast */
+    z-index: -1;
+}
 
 /* Navigation Bar */
 nav {
@@ -107,7 +127,37 @@ main {
     gap: 20px; /* Adds spacing between elements */
 }
 
+/* Collection Box (Text + Image) */
+.collection-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #BBBBBB;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 2; /* Makes this section take up more space */
+}
 
+/* Collection Text */
+.collection-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.collection-text h2 {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.collection-text p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+}
 
 /* Collection Image */
 .collection-image {
@@ -162,7 +212,35 @@ main {
     border-radius: 8px;
 }
 
+/* All Page Titles */
+h1 {
+    background-color: #000000; /* Black Background */
+    color: #FFFFFF; /* White Text */
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px; /* Slight rounding for a smooth look */
+    margin-top: 20px; /* Adds spacing below nav */
+    font-size: 32px; /* All titles the same text size*/
+}
 
+/* Subtitle Box */
+.subtitle-box {
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    padding: 15px;
+    max-width: 800px;
+    margin: 0 auto 20px; /* Centers it and adds space below */
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle-box p {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    line-height: 1.5;
+}
 
 /* About Page Container */
 .about-container {
@@ -199,6 +277,84 @@ main {
     border-radius: 8px;
 }
 
+/* About Page Title */
+
+
+/* Featured Image */
+.featured-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #bbb;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #bbb;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    border-color: #f4af1b;
+}
+
+/* Gallery Page Title */
+
+
+/* Subtitle Box */
+.subtitle-box {
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px solid #BBBBBB;
+    padding: 15px;
+    max-width: 800px;
+    margin: 0 auto 20px; /* Centers it and adds space below */
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle-box p {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Still-Life Page Title */
+
+
+/* Subtitle Box */
+.subtitle-box {
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px solid #BBBBBB;
+    padding: 15px;
+    max-width: 800px;
+    margin: 0 auto 20px; /* Centers it and adds space below */
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.subtitle-box p {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    line-height: 1.5;
+}
 
 /* Still-Life & Gallery Grid */
 .gallery-grid {
@@ -219,10 +375,14 @@ main {
     object-fit: cover; /* Crops images while maintaining proportions */
     border-radius: 8px; /* Smooths edges */
     display: block;
+    transition: transform 0.3s ease-in-out;
     overflow: hidden; /* Ensures no content spills out */
 }
 
-
+/* Hover Effect */
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
 
 /* Responsive Design for Mobile */
 @media (max-width: 600px) {
@@ -230,6 +390,8 @@ main {
         grid-template-columns: 1fr; /* Switches to 1 image per row for small screens */
     }
 }
+
+/* Contact Page Title */
 
 
 /* Contact Page Layout */
