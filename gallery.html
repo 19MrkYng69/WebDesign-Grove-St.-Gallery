@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | Grove St. Gallery</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Grove St. Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+    <header>
     <div class="header-container">
-      <div class="header-content">
-        <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Left" class="side-logo" />
-        <img src="Images/gallery-border-image-1-67d030f8225fb.webp" alt="Gallery Decorative Image Left" class="header-image" />
-        <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Center" id="logo" />
-        <img src="Images/gallery-border-image-2-67d030f8226ab.webp" alt="Gallery Decorative Image Right" class="header-image" />
-        <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Right" class="side-logo" />
-      </div>
+        <div class="header-content">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Left" class="side-logo">
+            <img src="Images/gallery-border-image-1.webp" alt="Gallery Decorative Image Left" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Center" id="logo">
+            <img src="Images/gallery-border-image-2.webp" alt="Gallery Decorative Image Right" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Right" class="side-logo">
+        </div>
     </div>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="still-life.html">Still Life</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="still-life.html">Still Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
+    
+    <main>
+        <section>
+            <h1 class="gallery-title">Grove St. Gallery - Painting Gallery</h1>
+            <div class="gallery-grid">
+                <img src="Images/alone.webp" alt="Gallery Image 1" class="lightbox-trigger">
+                <img src="Images/antenna.webp" alt="Gallery Image 2" class="lightbox-trigger">
+                <img src="Images/clem-onojeghuo.webp" alt="Gallery Image 3" class="lightbox-trigger">
+                <img src="Images/istanbul.webp" alt="Gallery Image 4" class="lightbox-trigger">
+                <img src="Images/samuel-zeller.webp" alt="Gallery Image 5" class="lightbox-trigger">
+                <img src="Images/woman.webp" alt="Gallery Image 6" class="lightbox-trigger">
+            </div>
 
-  <main>
-    <section>
-      <h1 class="gallery-title">Grove St. Gallery - Painting Gallery</h1>
-      <div class="gallery-grid">
-        <img src="Images/alone-3031258-1920-67d02a7a5c17d.webp" alt="Gallery Image 1" class="lightbox-trigger" />
-        <img src="Images/antenna-502721-unsplash-67d02a7ad3f61.webp" alt="Gallery Image 2" class="lightbox-trigger" />
-        <img src="Images/clem-onojeghuo-197522-unsplash.webp" alt="Gallery Image 3" class="lightbox-trigger" />
-        <img src="Images/istanbul-168774-1920-67d02a7fe5d1c.webp" alt="Gallery Image 4" class="lightbox-trigger" />
-        <img src="Images/samuel-zeller-74983-unsplash-67d02a8532bbc.webp" alt="Gallery Image 5" class="lightbox-trigger" />
-        <img src="Images/woman-1283009-1920-67d02a8558c87.webp" alt="Gallery Image 6" class="lightbox-trigger" />
-      </div>
+            <!-- Lightbox Container -->
+<div id="lightbox">
+    <img id="lightbox-image" src="" alt="">
+</div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Grove St. Gallery | <a href="contact.html">Contact Us</a></p>
 
-      <!-- Lightbox Container -->
-      <div id="lightbox">
-        <img id="lightbox-image" src="" alt="Expanded artwork" />
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Grove St. Gallery | <a href="contact.html">Contact Us</a></p>
     <div class="social-container">
-      <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
-        <img src="Images/facebook_5968764.png" alt="Facebook" />
-      </a>
-      <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
-        <img src="Images/instagram_2111463.png" alt="Instagram" />
-      </a>
-      <a href="https://www.twitter.com" target="_blank" class="social-button twitter">
-        <img src="Images/logos.png" alt="Twitter" />
-      </a>
+        <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+            <img src="Images/facebook.webp" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
+            <img src="Images/instagram.webp" alt="Instagram">
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="social-button twitter">
+            <img src="Images/logos.webp" alt="Twitter">
+        </a>
     </div>
-  </footer>
-
-  <!-- JavaScript File -->
-  <script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
