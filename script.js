@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // CONTACT FORM CONFIRMATION
-  const form = document.getElementById("contact-form");
+  const form = document.getElementById("contactForm");
   const responseDiv = document.getElementById("form-response");
 
   if (form && responseDiv) {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault(); // Prevent default form submission
 
       // Display message to user
-      responseDiv.innerText = "Thanks for your interest in Grove St. Gallery. We will be in touch soon!";
+      responseDiv.innerText = "***Thanks for your interest in Grove St. Gallery. *** We will be in touch soon!";
       responseDiv.style.color = "#F4AF1B";
       responseDiv.style.fontWeight = "bold";
       responseDiv.style.marginTop = "20px";
