@@ -51,7 +51,7 @@ body {
 
 /* Apply Background Image to All Pages */
 body {
-    background-image: url('Images/Background.webp'); /* If inside an images/ folder, use 'images/Background.png' */
+    background-image: url('images/Background.webp'); /* If inside an images/ folder, use 'images/Background.png' */
     background-size: cover; /* Ensures full coverage */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
