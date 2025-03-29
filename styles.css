@@ -1,14 +1,28 @@
 /* styles.css */
 
 /* General Styles */
+html {
+    height: 100%;
+}
+
 body {
-    font-family: Bell MT, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    font-family: "Bell MT", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
     color: #000000;
-}
 
+    background-image: url('images/Background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* Header Container */
 .header-container {
     display: flex;
@@ -47,15 +61,6 @@ body {
     width: 200px; /* Keeps the logo size balanced */
     height: 140px; /* Matches side images */
     display: block;
-}
-
-/* Apply Background Image to All Pages */
-body {
-    background-image: url('images/Background.webp'); /* If inside an images/ folder, use 'images/Background.webp' */
-    background-size: cover; /* Ensures full coverage */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-attachment: fixed; /* Keeps background static when scrolling */
 }
 
 /* Optional: Add a Background Overlay for Better Readability */
@@ -616,19 +621,4 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-}
-
-/* Sticky Footer Layout */
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-body {
-    flex: 1;
-}
-
-main {
-    flex: 1;
 }
