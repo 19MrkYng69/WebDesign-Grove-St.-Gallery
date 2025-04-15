@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Still Life | Grove St. Gallery</title>
+     <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+            max-height: 400px;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!--Header for Webpages with logos and images-->
+    <header>
+    <div class="header-container">
+        <div class="header-content">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Left" class="side-logo">
+            <img src="Images/gallery-border-image-1.webp" alt="Gallery Decorative Image Left" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Center" id="logo">
+            <img src="Images/gallery-border-image-2.webp" alt="Gallery Decorative Image Right" class="header-image">
+            <img src="Images/gallery-logo-white.webp" alt="Grove St. Gallery Logo Right" class="side-logo">
+        </div>
+    </div>
+    <!--Navigation menu-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="still-life.html">Still Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--Main content section for still-life page-->    
+<main>
+    <h1 class="still-life-title">Grove St. Gallery - Beauty in the Still</h1>
+
+    <div class="subtitle-box">
+        <p>A collection of drawings and photographs of still life. Capturing the beauty in everyday objects, the elegance in their form and the scenes they create that one might often miss if not paying attention.</p>
+    </div>
+
+    <!-- image gallery-grid -->
+    <div class="gallery-grid">
+        <img src="still-life/florencia-potter.webp" alt="Still Life Image 1" class="lightbox-trigger">
+        <img src="still-life/still-life-roberta-sorge.webp" alt="Still Life Image 2" class="lightbox-trigger">
+        <img src="still-life/vintage.webp" alt="Still Life Image 3" class="lightbox-trigger">
+        <img src="still-life/still-life-1.webp" alt="Still Life Image 4" class="lightbox-trigger">
+        <img src="still-life/still-life-2.webp" alt="Still Life Image 5" class="lightbox-trigger">
+        <img src="still-life/still-life-3.webp" alt="Still Life Image 6" class="lightbox-trigger">
+        <img src="still-life/still-life-4.webp" alt="Still Life Image 7" class="lightbox-trigger">
+        <img src="still-life/still-life-rustic.webp" alt="Still Life Image 8" class="lightbox-trigger">
+    </div>
+              <!-- Lightbox Container for viewing larger images -->
+<div id="lightbox">
+    <img id="lightbox-image" src="" alt="">
+</div>  
+
+    
+</main>
+
+    <!--Footer section-->
+    <footer>
+        <p>&copy; 2025 Grove St. Gallery | <a href="contact.html">Contact Us</a></p>
+
+    <div class="social-container">
+        <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+            <img src="Images/facebook.webp" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
+            <img src="Images/instagram.webp" alt="Instagram">
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="social-button twitter">
+            <img src="Images/logos.webp" alt="Twitter">
+        </a>
+    </div>
+    </footer>
+
+    <!-- Link to JavaScript-->
+    <script src="js/script.js"></script>
+</body>
+</html>
