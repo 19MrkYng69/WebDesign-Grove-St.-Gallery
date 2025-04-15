@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Grove St. Gallery</title>
+     <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--Header for Webpages with logos and images-->
+    <header>
+    <div class="header-container">
+        <div class="header-content">
+            <img src="Images/Gallery-Logo-White.webp" alt="Grove St. Gallery Logo Left" class="side-logo">
+            <img src="Images/gallery-border-image-1.webp" alt="Gallery Decorative Image Left" class="header-image">
+            <img src="Images/Gallery-Logo-White.webp" alt="Grove St. Gallery Logo Center" id="logo">
+            <img src="Images/gallery-border-image-2.webp" alt="Gallery Decorative Image Right" class="header-image">
+            <img src="Images/Gallery-Logo-White.webp" alt="Grove St. Gallery Logo Right" class="side-logo">
+        </div>
+    </div>
+    <!--Navigation menu-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="still-life.html">Still Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--Main content section for contact page-->      
+<main>
+    <h1 class="contact-title">Grove St. Gallery - Contact Us</h1>
+
+    <section class="contact-container">
+        <!-- Contact Information Box -->
+        <div class="contact-info">
+            <h2>Gallery Information</h2>
+            <p><strong>Opening Times:</strong></p>
+            <ul>
+                <li>Monday - Friday: 9am – 6pm</li>
+                <li>Thursday & Sunday: By appointment</li>
+                <li>Saturday: 10am – 5pm</li>
+            </ul>
+            <p>We are located in the centre of Edinburgh a few streets away from Haymarket Train Station.</p>
+            <p>For inquiries, please email us at <a href="mailto:info@grovestgallery.com">info@grovestgallery.com</a>.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+<form id="contactForm" action="#" method="POST">
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="name" required>
+
+             <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+             <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-response"></div>
+        </div>
+    </section>
+</main>
+
+    <!--Footer section-->
+    <footer>
+        <p>&copy; 2025 Grove St. Gallery | <a href="contact.html">Contact Us</a></p>
+
+    <div class="social-container">
+        <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+            <img src="Images/facebook.webp" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
+            <img src="Images/instagram.webp" alt="Instagram">
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="social-button twitter">
+            <img src="Images/logos.webp" alt="Twitter">
+        </a>
+    </div>
+    </footer>
+        <!-- Link to JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
